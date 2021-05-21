@@ -13,5 +13,34 @@
     justify-content: space-between;   
 }
 .nav__link {
+    position: relative;
     color: #2e363e;
+}
+
+.nav__notification {
+    background-color: tomato;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 600;
+    /*positon:absolute는 가장 가까운 relative를 가진 부모 기준으로 움직임*/
+    position: absolute;
+    left: 15px;
+    bottom: 15px;
+    /*태그가 span이라서 heigh,width가 안 먹혔다 그래서 display:block을 사용
+    display: block;*/ 
+}
+.nav__newsnotif {
+    background-color: tomato;
+    width: 7px;
+    height: 7px;
+    border-radius: 3.5px;
+    display: flex;
+    font-size: 0;
+    position: absolute;
+    left: 35px;
 }
