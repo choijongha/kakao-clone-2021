@@ -2,7 +2,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 25px;
+    
+    /*값을 위 아래로 주거나 아니면 var(---)변수명을 써줌*/
+    padding: var(--horizontal-space);
 }
 
 .screen-header__title {
