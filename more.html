@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chats - kakao clone</title>
+    <title>More - kakao clone</title>
 </head>
 <body>
     <div class="status-bar">
@@ -24,17 +24,22 @@
     </div>
 
     <header class="screen-header">
-        <h1 class="screen-header__title">Chats</h1>
+        <h1 class="screen-header__title">More</h1>
         <div class="screen-header__icons">
-            <span><i class="fas fa-search fa-lg"></i></span>
-            <span><i class="far fa-comment-dots fa-lg"></i></span>
-            <span><i class="fas fa-music fa-lg"></i></span>
-            <span><i class="fas fa-cog fa-lg"></i></span>
-
+            <span class="screen-header__setting">
+                <i class="fas fa-search fa-lg"></i>
+            </span>
+            <span>
+                <i class="fas fa-music fa-lg"></i>
+            </span>
+            <span class="screen-header__setting">
+                <a href="settings.html">
+                <i class="fas fa-cog fa-lg"></i></a>
+                <div class="new newdot">.</div>
+            </span>    
         </div>
     </header>
-
-    <main class="main-screen">
+    <main class="main-screen more-screen">
         <div class="user-component">
             <!--.user-component__column*2-->
             <div class="user-component__column">
@@ -42,16 +47,35 @@
                  class="user-component__avatar user-component__avatar" />
                 <div class="user-component__text">
                     <h4 class="user-component__title">JongHa</h4>
-                    <h6 class="user-component__subtitle">Please check My Kakao Account Info</h6>
+                    <h6 class="user-component__subtitle">+82 10-1234-5678</h6>
                 </div>
             </div>
             <div class="user-component__column">
-                <span class="user-component__time">21:22</span>
-                <div class="badge">1</div>
+                <i class="far fa-comment-alt fa-2x"></i>
             </div>
         </div>
-
+        <div class="icon-row">
+           <!--.icon-row__icon*4>span-->
+           <div class="icon-row__icon"><i class="far fa-calendar-alt"></i><span>Calender</span></div>
+           <div class="icon-row__icon"><i class="fas fa-archive"></i><span>Talk Drive</span></div>
+           <div class="icon-row__icon"><i class="far fa-laugh"></i><span></i>Emoticons</span></div>
+           <div class="icon-row__icon"><i class="fas fa-brush"></i><span>Thems</span></div>
+        </div>
+        <div class="more-suggestions">
+            <h4 class="more-suggestions__title">Suggestions</h4>
+            <div class="more-suggestions__icons">
+                <div class="more-suggestions__icon">
+                    <div class="more-suggestions__icon-image"><i class="fas fa-quote-right"></i></div>
+                    <span class="more-suggestions__icon-text">Kakao Story</span>
+                </div>
+                <div class="more-suggestions__icon">
+                    <div class="more-suggestions__icon-image"><i class="fas fa-quote-right"></i></div>
+                    <span class="more-suggestions__icon-text">Kakao Story</span>
+                </div>
+            </div>
+        </div>
     </main>
+
     <nav class="nav">
         <ul class="nav__list">
             <li class="nav__btn">
@@ -62,7 +86,7 @@
             <li class="nav__btn">
                 <a class="nav__link" href="chat.html">
                     <span class="nav__notification badge">1</span>
-                    <i class="fas fa-comment fa-2x"></i>
+                    <i class="far fa-comment fa-2x"></i>
                 </a>
             </li>
             <li class="nav__btn">

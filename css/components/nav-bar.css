@@ -26,12 +26,6 @@
     display: block;*/ 
 }
 .nav__newsnotif {
-    background-color: tomato;
-    width: 7px;
-    height: 7px;
-    border-radius: 3.5px;
-    display: flex;
-    font-size: 0;
     position: absolute;
     left: 35px;
 }
