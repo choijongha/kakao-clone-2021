@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chats - kakao clone</title>
+    <title>Chat - kakao clone</title>
 </head>
-<body>
+<body class="kakao-screen chat-screen">
     <div class="status-bar">
         <div class="status-bar__column">
             <span>No Service</span>
@@ -23,61 +23,37 @@
             </div>
     </div>
 
-    <header class="screen-header">
-        <h1 class="screen-header__title">Chats</h1>
-        <div class="screen-header__icons">
+    <header class="main-header alt-header">
+        <div class="alt-header__column">
+            <a href="chats.html">
+                <i class="fas fa-angle-left fa-3x"></i>
+            </a>
+        </div>
+        <div class="alt-header__column">
+            <h1 class="alt-header__title">이달봉</h1>
+        </div>
+        <div class="alt-header__column">
             <span><i class="fas fa-search fa-lg"></i></span>
-            <span><i class="far fa-comment-dots fa-lg"></i></span>
-            <span><i class="fas fa-music fa-lg"></i></span>
-            <span><i class="fas fa-cog fa-lg"></i></span>
-
+            <span><i class="fas fa-bars fa-lg"></i></span>
         </div>
     </header>
 
-    <main class="main-screen">
-        <div class="user-component">
-            <!--.user-component__column*2-->
-            <div class="user-component__column">
-                <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FPUoWS%2Fbtq5w7IqQov%2FEZaLQjfNgpUCqlWBQYhevK%2Fimg.png"
-                 class="user-component__avatar user-component__avatar" />
-                <div class="user-component__text">
-                    <h4 class="user-component__title">JongHa</h4>
-                    <h6 class="user-component__subtitle">Please check My Kakao Account Info</h6>
+    <main class="main-screen main-chat">
+        <div class="chat__timestamp">
+            Wednesday, May 26, 2021
+        </div>
+        <div class="massage-row">
+            <img src="https://postfiles.pstatic.net/MjAyMTA1MjdfMjAw/MDAxNjIyMDQxNTkwMzU3.-u52t2vmne174tzSNsYTQW23A7bHIzCKX6Jzqy5de_Ug.dxylaovPL0wNUqYJdTUhNPUzJjbg6ZOJ0hjeOn3E_gog.JPEG.whdgk159/IMG_3725.JPG?type=w773">
+            <div class="massage-row__content">
+                <span class="massage__author">이달봉</span>
+                <div class="massage__info">
+                    <span class="massage__bubble">Hi!</span>
+                    <span class="massage__time">21:27</span>
                 </div>
             </div>
-            <div class="user-component__column">
-                <span class="user-component__time">21:22</span>
-                <div class="badge">1</div>
-            </div>
         </div>
-
     </main>
-    <nav class="nav">
-        <ul class="nav__list">
-            <li class="nav__btn">
-                <a class="nav__link" href="friends.html">
-                    <i class="far fa-user fa-2x"></i>
-                </a>
-            </li>
-            <li class="nav__btn">
-                <a class="nav__link" href="chat.html">
-                    <span class="nav__notification badge">1</span>
-                    <i class="fas fa-comment fa-2x"></i>
-                </a>
-            </li>
-            <li class="nav__btn">
-                <a class="nav__link" href="find.html">
-                    <i class="fas fa-search fa-2x"></i>
-                </a>
-            </li>
-            <li class="nav__btn">
-                <a class="nav__link" href="more.html">
-                    <span class="nav__newsnotif newdot">.</span>
-                    <i class="fas fa-ellipsis-h fa-2x"></i>
-                </a>
-            </li>
-        </ul>
-    </nav>
+
     <script src="https://kit.fontawesome.com/6f758293ed.js" crossorigin="anonymous"></script>
 </body>
 </html>

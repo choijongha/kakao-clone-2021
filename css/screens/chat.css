@@ -1,0 +1,66 @@
+.chat-screen {
+    background-color: #abc1d1;
+    height: 1100vh;
+}
+
+.kakao-screen .alt-header {
+    top: 0;
+    position: fixed;
+    width: 100%;
+    background-color: #abc1d1;
+    box-sizing: border-box;
+    z-index: 1;
+}
+.chat-screen .status-bar {
+    background-color: #abc1d1;
+    /**display, position:fixed를 하면 layer를 순서대로 가지게 된다**/
+    z-index: 2;
+}
+
+.main-chat {
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.chat__timestamp {
+    color: white;
+    background-color: #92a4b2;
+    padding: 15px;
+    font-size: 14px;
+    border-radius: 25px;
+    margin-bottom: 25px;
+}
+.massage-row {
+    width: 100%;
+    display: flex;
+}
+.massage-row img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.massage__author {
+    
+    margin-bottom: 8px;
+    display: block;
+}
+.massage__info {
+    display: flex;
+    align-items: flex-end;
+}
+.massage__bubble {
+    background-color: white;
+    padding: 13px;
+    font-size: 18px;
+    border-radius: 15px;
+    border-top-left-radius: 0px;
+    margin-right: 5px;
+}
+.massage__time,
+.massage__author {
+    opacity: 0.8;
+    font-size: 14px;
+}

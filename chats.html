@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Settings - kakao clone</title>
+    <title>Chats - kakao clone</title>
 </head>
-<body>
+<body class="kakao-screen">
     <div class="status-bar">
         <div class="status-bar__column">
             <span>No Service</span>
@@ -23,50 +23,37 @@
             </div>
     </div>
 
-    <header class="main-header alt-header">
-        <div class="alt-header__column">
-            <a href="more.html">
-                <i class="fas fa-angle-left fa-3x"></i>
-            </a>
-        </div>
-        <div class="alt-header__column">
-            <h1 class="alt-header__title">Settings</h1>
-        </div>
-        <div class="alt-header__column">
-            <i class="fas fa-search fa-lg"></i>
+    <header class="main-header screen-header">
+        <h1 class="screen-header__title">Chats</h1>
+        <div class="screen-header__icons">
+            <span><i class="fas fa-search fa-lg"></i></span>
+            <span><i class="far fa-comment-dots fa-lg"></i></span>
+            <span><i class="fas fa-music fa-lg"></i></span>
+            <span><i class="fas fa-cog fa-lg"></i></span>
+
         </div>
     </header>
 
     <main class="main-screen">
-        <ul class="settings-list">
-            <li class="settings-setting">
-                <div class="settings-setting-column">
-                    <i class="fas fa-bullhorn"></i>
-                    <span>Notices</span>
+        <a href="chat.html">
+            <div class="user-component">
+                <!--.user-component__column*2-->
+                <div class="user-component__column">
+                    <img src="https://postfiles.pstatic.net/MjAyMTA1MjdfMjAw/MDAxNjIyMDQxNTkwMzU3.-u52t2vmne174tzSNsYTQW23A7bHIzCKX6Jzqy5de_Ug.dxylaovPL0wNUqYJdTUhNPUzJjbg6ZOJ0hjeOn3E_gog.JPEG.whdgk159/IMG_3725.JPG?type=w773"
+                    class="user-component__avatar user-component__avatar" />
+                    <div class="user-component__text">
+                        <h4 class="user-component__title">이달봉</h4>
+                        <h6 class="user-component__subtitle">Hi</h6>
+                    </div>
                 </div>
-                <div class="settings-setting-column">
+                <div class="user-component__column">
+                    <span class="user-component__time">21:22</span>
+                    <div class="badge">1</div>
                 </div>
-            </li>
-            <li class="settings-setting">
-                <div class="settings-setting-column">
-                    <i class="fas fa-flask"></i>
-                    <span>Kakao Lab</span>
-                </div>
-                <div class="settings-setting-column">
-                </div>
-            </li>
-            <li class="settings-setting">
-                <div class="settings-setting-column">
-                    <i class="fas fa-info-circle"></i>
-                    <span>Version</span>
-                </div>
-                <div class="settings-setting-column">
-                    Latest Version
-                </div>
-            </li>
-        </ul>
-    </main>
+            </div>
+        </a>
 
+    </main>
     <nav class="nav">
         <ul class="nav__list">
             <li class="nav__btn">
@@ -77,7 +64,7 @@
             <li class="nav__btn">
                 <a class="nav__link" href="chats.html">
                     <span class="nav__notification badge">1</span>
-                    <i class="far fa-comment fa-2x"></i>
+                    <i class="fas fa-comment fa-2x"></i>
                 </a>
             </li>
             <li class="nav__btn">
