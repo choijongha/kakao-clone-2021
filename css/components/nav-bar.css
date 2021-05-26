@@ -18,15 +18,6 @@
 }
 
 .nav__notification {
-    background-color: tomato;
-    width: 30px;
-    height: 30px;
-    border-radius: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    font-weight: 600;
     /*positon:absolute는 가장 가까운 relative를 가진 부모 기준으로 움직임*/
     position: absolute;
     left: 15px;

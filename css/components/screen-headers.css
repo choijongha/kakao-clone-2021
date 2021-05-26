@@ -5,6 +5,7 @@
     
     /*값을 위 아래로 주거나 아니면 var(---)변수명을 써줌*/
     padding: var(--horizontal-space);
+    margin-bottom: 15px;
 }
 
 .screen-header__title {
