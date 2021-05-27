@@ -90,3 +90,25 @@
 .open-post__heart-count span {
     margin-left: 3px;
 }
+
+@keyframes heartBeat {
+    0%{
+        color: white;
+        transform: none;
+    }
+    50%{
+        color: tomato;
+        transform: scale(1.5);
+    }
+    100%{
+        color: white;
+    }   
+}
+/**will-change는 기본적으로 브라우저에게
+뭔가가 바뀔거라고 말해준다
+그리고 그때 애니메이션을 더 나아보이게 해준다
+**/
+.open-post__heart-count:hover i {
+    will-change: transform;
+    animation: heartBeat 1s linear infinite;
+}
