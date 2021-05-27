@@ -17,6 +17,17 @@
     color: #2e363e;
 }
 
+@keyframes notificationAnimation {
+    0%{
+        transform:none;
+    }
+    50%{
+        transform: translateY(-5px) rotateY(360deg);
+    }
+    100%{
+        transform:none;
+    }
+}
 .nav__notification {
     /*positon:absolute는 가장 가까운 relative를 가진 부모 기준으로 움직임*/
     position: absolute;
@@ -24,8 +35,36 @@
     bottom: 15px;
     /*태그가 span이라서 heigh,width가 안 먹혔다 그래서 display:block을 사용
     display: block;*/ 
+    animation:notificationAnimation 2s ease-in-out infinite;
 }
 .nav__newsnotif {
     position: absolute;
     left: 35px;
+}
+
+@keyframes appearBtnAnimation {
+    from{
+        
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.nav__btn {
+    transform: translateY(50px);
+    opacity: 0;
+    animation: appearBtnAnimation 0.2s ease-in-out forwards;
+}
+
+.nav__btn:nth-child(2) {
+    animation-delay: 0.1s;
+}
+.nav__btn:nth-child(3) {
+    animation-delay: 0.3s;   
+}
+.nav__btn:last-child {
+    animation-delay: 0.5s;
 }

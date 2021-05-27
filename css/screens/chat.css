@@ -1,6 +1,11 @@
 .chat-screen {
     background-color: #abc1d1;
-    height: 1100vh;
+    height: 500vh;
+}
+.chat-screen .status-bar {
+    background-color: #abc1d1;
+    /**display, position:fixed를 하면 layer를 순서대로 가지게 된다**/
+    z-index: 2;
 }
 
 .kakao-screen .alt-header {
@@ -11,17 +16,23 @@
     box-sizing: border-box;
     z-index: 1;
 }
-.chat-screen .status-bar {
-    background-color: #abc1d1;
-    /**display, position:fixed를 하면 layer를 순서대로 가지게 된다**/
-    z-index: 2;
+@keyframes fadeIn {
+    from {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    to {
+        transform: none;
+        opacity: 1;
+    }
 }
-
 .main-chat {
     margin-top: 120px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    
+    
 }
 .chat__timestamp {
     color: white;
@@ -30,27 +41,46 @@
     font-size: 14px;
     border-radius: 25px;
     margin-bottom: 25px;
+    animation: fadeIn 2s ease-in-out ;
 }
 .message-row {
     width: 100%;
     display: flex;
     margin-bottom: 25px;
+    
 }
 .message-row img {
     width: 50px;
     height: 50px;
     border-radius: 50%;
     margin-right: 10px;
+    animation: fadeIn 2s ease-in-out forwards;
+    animation-delay: 2s;
+    opacity: 0;    
 }
-
+.message-row__content {
+    opacity: 0;
+    animation: fadeIn 2s ease-in-out forwards;
+}
 .message__author {
-    
     margin-bottom: 8px;
-    display: block;
+    display: flex;
+    animation: fadeIn 2s ease-in-out forwards;
+    animation-delay: 2s;
+    
 }
 .message__info {
     display: flex;
     align-items: flex-end;
+    opacity: 0;
+}
+.message__info:last-child {
+    animation: fadeIn 2s ease-in-out forwards;
+    animation-delay: 4s;
+}
+.message__info:first-child {
+    animation: fadeIn 2s ease-in-out forwards;
+    animation-delay: 6s;
 }
 .message__bubble {
     background-color: white;
