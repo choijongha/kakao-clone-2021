@@ -21,25 +21,43 @@
             <i class="fas fa-battery-three-quarters fa-lg"></i>
             <i class="fas fa-bolt"></i>
             </div>
-    
     </div>
+    <img class="cateye" src="https://mblogthumb-phinf.pstatic.net/MjAxODA1MDRfMTEy/MDAxNTI1NDE0NTA1NDMx.PL096hW1D-O-d3rnkeITPxKzS6pR3bWYrB_7egZiSwog.QLw_ZGupReRGlejxg-zs3_8BzzAa3HE4NjST8M-D3Dgg.JPEG.gatoblancokr/3656514979_5b213c5285_b.jpg?type=w800" alt="miya">
     <header class="welcome-header">
-        <h1 class="welcome-header__title">Welcome to KakaoTalk
+        <h1 class="welcome-header__title">Who are you?
         </h1>
         <p class="welcome-header__text">
-            If you have a Kakao Account, log in with your email or phone number.
+            Bring something to eat if you want to play with me.
         </p>
     </header>
-    <form action="friends.html" method="get" id="login-form">
-        <input required name="username" type="text" placeholder="Email or phone number" />
-        <input required name="password" type="password" minlength="5" placeholder="Password" />
-        <input type="submit" value="Log in" />
-        <input type="submit" value="Sign up" />   
-        <a href="#">Find Kakao Account or Password</a>
-    </form>
+    <div class="friendmain">
+        <form action="friends.html" method="get" id="login-form">
+            <input required name="username" type="text" placeholder="Name" />
+            <div>
+                <input required type="checkbox" id="love" name="love"
+                       checked>
+                <label for="love">Do you love cat?</label>
+            </div>
+            <div>
+                <input required type="checkbox" id="quiet" name="quiet">
+                <label for="quiet">are you quiet?</label>
+            </div>
+            <div>
+                <input required type="checkbox" id="eat" name="eat">
+                <label for="eat">Do you have anything to eat?</label>
+            </div>
+            <input type="submit" value="Go to meet" />
+            <a href="https://catpre.com/best-products?category=054"><input type="button" value="Go buy a snack"/></a>   
+            <a href="hungry.html">I'm happy even if I don't meet you</a>
+        </form>
+    </div>
+    <div id="splash-screen">
+        <i class="fas fa-cat"></i>
+    </div>
     <div id="no-mobile">
         <span>Your screen is too big</span>
     </div>
+    
     <script src="https://kit.fontawesome.com/6f758293ed.js" crossorigin="anonymous"></script>
 </body>
 </html>
