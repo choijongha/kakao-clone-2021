@@ -106,7 +106,7 @@
   color: white;
 }
 
-@-webkit-keyframes scaleCat {
+@keyframes scaleCat {
   from {
     transform: scale(1);
   }
