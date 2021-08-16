@@ -33,7 +33,7 @@
 }
 
 #login-form {
-  margin: 0 20% 0 20%;
+  margin: 0 20% 0 15%;
   display: flex;
   width: 50%;
   flex-direction: column;
